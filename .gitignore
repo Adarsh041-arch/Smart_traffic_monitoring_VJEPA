@@ -1,0 +1,86 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+
+# --- Conda ---
+# (env itself lives outside the repo, but ignore any local env exports)
+*.yml.bak
+
+# --- Jupyter / notebooks ---
+.ipynb_checkpoints/
+notebooks/*.ipynb_checkpoints/
+
+# --- Model weights & caches ---
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+.cache/
+**/checkpoints/
+
+# --- HuggingFace / Torch hub caches (if accidentally created inside repo) ---
+.hf_cache/
+.torch_cache/
+
+# --- Video / test data (large files, keep out of git) ---
+tests/*.mp4
+tests/*.avi
+*.mp4
+*.avi
+!tests/.gitkeep
+
+# --- Data folders ---
+data/
+datasets/
+*.csv
+*.parquet
+
+# --- Logs ---
+*.log
+logs/
+runs/
+wandb/
+
+# --- Environment / secrets ---
+.env
+.env.local
+*.env
+HF_TOKEN*
+
+# --- Database ---
+*.sqlite3
+*.db
+pgdata/
+
+# --- FastAPI / backend ---
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- React / frontend ---
+dashboard/node_modules/
+dashboard/build/
+dashboard/dist/
+dashboard/.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- OneDrive sync artifacts (Windows-specific) ---
+*.tmp
+~$*
